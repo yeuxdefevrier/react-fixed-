@@ -1,0 +1,4 @@
+{
+  "git.postCommitCommand": "none",
+  "git.enableSmartCommit": false,
+}
