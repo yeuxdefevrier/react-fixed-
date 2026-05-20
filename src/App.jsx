@@ -9,3 +9,4 @@ function App() {
 }
 
 export default App;
+import Counter from "./Counter";
