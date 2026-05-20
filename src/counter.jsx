@@ -1,24 +1,33 @@
-import * as React from "react";
 import { useState } from "react";
-import Increase from "./Increase";
-import Decrease from "./Decrease";
-import Reset from "./Reset";
-import DoubleIncrease from "./DoubleIncrease";
 import CountDisplay from "./CountDisplay";
+import IncreaseButton from "./IncreaseButton";
+import DecreaseButton from "./DecreaseButton";
+import ResetButton from "./ResetButton";
 
 function Counter() {
   const [count, setCount] = useState(0);
 
+  function increase() {
+    setCount(count + 1);
+  }
+
+  function decrease() {
+    setCount(count - 1);
+  }
+
+  function reset() {
+    setCount(0);
+  }
+
   return (
     <div>
-      <h2> counter</h2>
+      <h2>Counter</h2>
 
       <CountDisplay count={count} />
 
-      <Increase setCount={setCount} />
-      <Decrease setCount={setCount} />
-      <DoubleIncrease setCount={setCount} />
-      <Reset setCount={setCount} />
+      <IncreaseButton onClick={increase} />
+      <DecreaseButton onClick={decrease} />
+      <ResetButton onClick={reset} />
     </div>
   );
 }
