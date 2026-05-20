@@ -21,3 +21,18 @@ function App() {
 }
 
 export default App;
+
+import usercard from "./usercard";
+
+function app() {
+  return (
+    <div>
+      <usercard
+        name="lia"
+        list={["react", "javascript", "css"]}
+      />
+    </div>
+  );
+}
+
+export default app;
