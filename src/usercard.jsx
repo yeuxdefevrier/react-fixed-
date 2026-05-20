@@ -1,7 +1,7 @@
-import Greeting from "./greeting";
-import InfoList from "./infolist";
+import Greeting from "./Greeting";
+import InfoList from "./InfoList";
 
-function usercard({ name, list }) {
+function Usercard({ name, list }) {
   return (
     <div>
       <Greeting name={name} />
@@ -10,4 +10,4 @@ function usercard({ name, list }) {
   );
 }
 
-export default usercard;
+export default Usercard;
