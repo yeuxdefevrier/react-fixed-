@@ -1,7 +1,7 @@
 import { useState } from "react";
 import CountDisplay from "./CountDisplay";
-import IncreaseButton from "./IncreaseButton";
-import DecreaseButton from "./DecreaseButton";
+import IncreaseButton from "./IncButton";
+import DecreaseButton from "./DecButton";
 import ResetButton from "./ResetButton";
 
 function Counter() {
