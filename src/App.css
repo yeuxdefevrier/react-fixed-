@@ -167,7 +167,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -4.5px;
     border: 5px solid transparent;
@@ -181,4 +181,21 @@
     right: 0;
     border-right-color: var(--border);
   }
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+li:hover {
+  color: red;
 }
